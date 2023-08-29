@@ -1,0 +1,10 @@
+:root {
+  --brand-color: #ffffff;
+  --background-color: #2f303a;
+  --color-blue: #2196f3;
+}
+
+body {
+  font-family: 'Roboto', 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--background-color);
+}
