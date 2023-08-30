@@ -1,10 +1,69 @@
 :root {
-  --brand-color: #ffffff;
-  --background-color: #2f303a;
-  --color-blue: #2196f3;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --primary-link-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --footer-bcg-color: #2f303a;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --text-logo-accent: #000000;
 }
 
 body {
   font-family: 'Roboto', 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
   color: var(--background-color);
+}
+
+/* ------------- Header ------------- */
+.site-header {
+  background-color: var(--primary-white-color);
+  width: 1600px;
+  height: 80px;
+}
+
+.site-header__logo {
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-logo-accent);
+  letter-spacing: 0.78px;
+}
+
+.web {
+  color: var(--primary-link-color);
+  letter-spacing: 0.78px;
+}
+
+/* ------ Header Nav ----- */
+
+.nav-menu {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  font-family: 'Roboto';
+}
+
+.nav-menu .link {
+  color: var(--title-text-color);
+}
+
+.nav-menu .link :hover,
+.nav-menu .link :focus {
+  color: var(--primary-link-color);
+}
+
+.nav-menu .link .current {
+  color: var(--primary-link-color);
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+/* -------- Main --------- */
+
+.banner {
+  width: 1600px;
+  height: 600px;
 }
