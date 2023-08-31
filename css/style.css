@@ -3,14 +3,20 @@
   --title-text-color: #212121;
   --primary-link-color: #2196f3;
   --primary-white-color: #ffffff;
-  --footer-bcg-color: #2f303a;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --text-logo-accent: #000000;
+  --bg-our-team: #f5f4fa;
+  --footer-bcg-color: #2f303a;
 }
 
 body {
-  font-family: 'Roboto', 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto';
   color: var(--background-color);
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 /* ------------- Header ------------- */
@@ -20,7 +26,7 @@ body {
   height: 80px;
 }
 
-.site-header__logo {
+.header-logo {
   font-family: 'Raleway';
   font-size: 26px;
   font-weight: 700;
@@ -40,30 +46,179 @@ body {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
-  font-family: 'Roboto';
 }
 
 .nav-menu .link {
   color: var(--title-text-color);
 }
 
-.nav-menu .link :hover,
-.nav-menu .link :focus {
+.link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+}
+
+.link:hover,
+.link:focus {
   color: var(--primary-link-color);
 }
 
-.nav-menu .link .current {
+/* .nav-menu .link:hover,
+.nav-menu .link:focus {
   color: var(--primary-link-color);
+} */
+
+li {
+  list-style: none;
 }
 
 .nav-menu a {
   text-decoration: none;
-  color: var(--title-text-color);
 }
 
 /* -------- Main --------- */
 
+/* ------section filter ----- */
+
+.filter-btn {
+  width: 73px;
+  height: 38px;
+  border-radius: 4px;
+  border-radius: 4px;
+  background: var(--primary-link-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
+  letter-spacing: 0.96px;
+  color: var(--primary-white-color);
+  border: none;
+  cursor: pointer;
+}
+
+/* -------------- section banner -------- */
 .banner {
   width: 1600px;
   height: 600px;
+  background: var(--footer-bcg-color);
+  text-align: center;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 900;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  line-height: 136.364%;
+  letter-spacing: 2.64px;
+}
+
+.banner-btn {
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
+  background: var(--primary-link-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
+  letter-spacing: 0.96px;
+  color: var(--primary-white-color);
+  border: none;
+  cursor: pointer;
+}
+
+/* --------- section about ------- */
+
+.about {
+  background-color: var(--primary-white-color);
+}
+
+h3 {
+  color: var(--title-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 187.5%;
+  letter-spacing: 0.96px;
+}
+
+p {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 171.429%;
+  letter-spacing: 0.42px;
+}
+
+/* ------------our-work -----------  */
+
+.our-work {
+  text-align: center;
+}
+
+h2 {
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+/* ----------- our team ----------- */
+
+.our-team {
+  width: 1600px;
+  height: 648px;
+  background: var(--bg-our-team);
+  text-align: center;
+  display: inline;
+}
+
+.card {
+  width: 270px;
+  height: 368px;
+  background: var(--primary-white-color);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* ------------ footer ------------- */
+
+.site-footer {
+  width: 1600px;
+  height: 252px;
+  background: var(--footer-bcg-color);
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-logo-accent);
+  letter-spacing: 0.78px;
+  color: var(--primary-white-color);
+}
+
+.address {
+  color: var(--primary-white-color);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 171.429%;
+  letter-spacing: 0.42px;
+}
+
+.footer-link {
+  color: var(--footer-link-color);
+  font-style: normal;
+  line-height: 171.429%;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--primary-link-color);
 }
