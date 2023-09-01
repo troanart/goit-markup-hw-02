@@ -7,6 +7,7 @@
   --text-logo-accent: #000000;
   --bg-our-team: #f5f4fa;
   --footer-bcg-color: #2f303a;
+  --card-portfolio: #eee;
 }
 
 body {
@@ -79,24 +80,51 @@ li {
 
 /* -------- Main --------- */
 
+.card-portfolio {
+  width: 370px;
+  height: 404px;
+  border: 1px solid var(--card-portfolio);
+}
+
+.card-portfolio h3 {
+  color: var(--text-logo-accent);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: 1.08px;
+}
+
+.card-portfolio p {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 187.5%;
+  letter-spacing: 0.48px;
+}
+
 /* ------section filter ----- */
 
 .filter-btn {
   width: 73px;
   height: 38px;
   border-radius: 4px;
-  border-radius: 4px;
-  background: var(--primary-link-color);
+  background: var(--bg-our-team);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   font-family: 'Roboto';
   font-size: 16px;
-  font-weight: 700;
-  line-height: 187.5%;
-  letter-spacing: 0.96px;
-  color: var(--primary-white-color);
+  font-weight: 500;
+  line-height: 162.5%;
+  letter-spacing: 0.48px;
+  color: var(--title-text-color);
   border: none;
   cursor: pointer;
+}
+
+.filter-btn:active,
+.filter-btn:hover,
+.filter-btn:focus {
+  background: var(--primary-link-color);
+  color: var(--primary-white-color);
 }
 
 /* -------------- section banner -------- */
