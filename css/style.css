@@ -147,6 +147,7 @@ li {
   background: var(--primary-link-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   font-family: 'Roboto';
+  font-style: normal;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
@@ -236,14 +237,17 @@ li {
   color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.71429;
+  font-family: 'Roboto';
   letter-spacing: 0.42px;
+  font-style: normal;
 }
 
 .footer-link {
   color: var(--footer-link-color);
   line-height: 1.71429;
-  font-weight: 400;
   letter-spacing: 0.42px;
+  font-family: 'Roboto';
+  font-style: normal;
 }
 
 .footer-link:hover,
