@@ -244,6 +244,7 @@ li {
 
 .footer-link {
   color: var(--footer-link-color);
+  font-size: 14px;
   line-height: 1.71429;
   letter-spacing: 0.42px;
   font-family: 'Roboto';
